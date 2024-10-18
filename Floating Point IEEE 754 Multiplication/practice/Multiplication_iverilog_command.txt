@@ -1,0 +1,20 @@
+
+`include "./adder32.v"  // include module file(relative path)
+
+
+// Code for watching waveform
+initial
+begin
+    $dumpfile("Multiplication.vcd");  // any file name possible
+    $dumpvars(0, multiplication_tb);  // instance name required
+end
+
+
+
+iverilog -o Multiplication.out \
+            Multiplication.v
+vvp Multiplication.out
+gtkwave Multiplication.vcd
+
+https://www.h-schmidt.net/FloatConverter/IEEE754.html
+// homepage for FP32 converter

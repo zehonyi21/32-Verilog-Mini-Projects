@@ -1,4 +1,4 @@
-# Test for push
+# Test for push2
 # 32 Verilog Mini Projects
 Implementing 32 Verilog Mini Projects.
 
